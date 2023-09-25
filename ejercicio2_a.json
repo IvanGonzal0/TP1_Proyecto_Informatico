@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "marca": "Ford",
+        "modelo": "Mustang",
+        "precio": 29999.99,
+        "fecha_fabricacion": "2023-03-15"
+    },
+    {
+        "id": 2,
+        "marca": "BMW",
+        "modelo": "X5",
+        "precio": 37999.95,
+        "fecha_fabricacion": "2022-09-20"
+    },
+    {
+        "id": 3,
+        "marca": "Audi",
+        "modelo": "A4",
+        "precio": 28999.99,
+        "fecha_fabricacion": "2023-01-10"
+    },
+    {
+        "id": 4,
+        "marca": "Ford",
+        "modelo": "Focus",
+        "precio": 18999.99,
+        "fecha_fabricacion": "2022-12-05"
+    },
+    {
+        "id": 5,
+        "marca": "BMW",
+        "modelo": "3 Series",
+        "precio": 32999.95,
+        "fecha_fabricacion": "2023-02-28"
+    },
+    {
+        "id": 6,
+        "marca": "Audi",
+        "modelo": "Q7",
+        "precio": 41999.99,
+        "fecha_fabricacion": "2022-08-18"
+    },
+    {
+        "id": 7,
+        "marca": "Ford",
+        "modelo": "Escape",
+        "precio": 25999.99,
+        "fecha_fabricacion": "2022-07-25"
+    },
+    {
+        "id": 8,
+        "marca": "BMW",
+        "modelo": "X3",
+        "precio": 34999.95,
+        "fecha_fabricacion": "2023-04-02"
+    },
+    {
+        "id": 9,
+        "marca": "Audi",
+        "modelo": "A6",
+        "precio": 31999.99,
+        "fecha_fabricacion": "2022-11-12"
+    }
+]

@@ -1,0 +1,35 @@
+{
+    "album": {
+        "titulo": "Nombre del Álbum",
+        "anio_lanzamiento": 2023,
+        "genero": "Pop",
+        "temas": [
+            {
+                "titulo": "Canción 1",
+                "duracion": "3:45"
+            },
+            {
+                "titulo": "Canción 2",
+                "duracion": "4:20"
+            },
+            {
+                "titulo": "Canción 3",
+                "duracion": "3:30"
+            }
+        ],
+        "autores": [
+            {
+                "nombre": "Autor 1",
+                "rol": "Compositor"
+            },
+            {
+                "nombre": "Autor 2",
+                "rol": "Compositor"
+            },
+            {
+                "nombre": "Autor 3",
+                "rol": "Intérprete"
+            }
+        ]
+    }
+}
