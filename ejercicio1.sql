@@ -13,15 +13,15 @@ CREATE TABLE IF NOT EXISTS Notebook (
 /* INSERTAR REGISTROS EN LA TABLA CREADA */
 INSERT INTO Notebook (marca, modelo, precio, fecha_fabricacion)
 VALUES
-    ('Ford', 'Mustang', 29999.99, '2023-03-15'),
-    ('BMW', 'X5', 37999.95, '2022-09-20'),
-    ('Audi', 'A4', 28999.99, '2023-01-10'),
-    ('Ford', 'Focus', 18999.99, '2022-12-05'),
-    ('BMW', '3 Series', 32999.95, '2023-02-28'),
-    ('Audi', 'Q7', 41999.99, '2022-08-18'),
-    ('Ford', 'Escape', 25999.99, '2022-07-25'),
-    ('BMW', 'X3', 34999.95, '2023-04-02'),
-    ('Audi', 'A6', 31999.99, '2022-11-12');
+    ('Dell', 'XPS 13', 1299.99, '2023-03-15'),
+    ('HP', 'Spectre x360', 1199.95, '2022-09-20'),
+    ('Lenovo', 'ThinkPad X1 Carbon', 1399.99, '2023-01-10'),
+    ('Apple', 'MacBook Air', 999.99, '2022-12-05'),
+    ('Asus', 'ZenBook 14', 1099.95, '2023-02-28'),
+    ('Acer', 'Swift 5', 899.99, '2022-08-18'),
+    ('Microsoft', 'Surface Laptop 4', 1299.99, '2022-07-25'),
+    ('Razer', 'Blade Stealth', 1499.95, '2023-04-02'),
+    ('LG', 'Gram 17', 1399.99, '2022-11-12');
 
 -- a. La información completa de todas las notebooks.
 SELECT * FROM Notebook;
