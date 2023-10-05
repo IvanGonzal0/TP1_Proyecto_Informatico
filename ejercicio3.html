@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio 3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <style>
-        /* Estilos CSS asi nomas */
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+      /* Estilos CSS asi nomas */
+      ul {
+        list-style: none;
+        padding: 0;
+      }
 
-        li {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
+      li {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
     </style>
-</head>
-<body>
-    <h1>Lista de Productos</h1>
-    <ul id="product-list">
-        <!-- PRODUCTOS -->
+  </head>
+  <body>
+    <h2>Agregar un Usuario</h2>
+    <form id="add-user-form" class="container" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="avatar" class="form-label">Avatar (URL):</label>
+        <input
+          type="url"
+          class="form-control"
+          id="avatar"
+          name="avatar"
+          required
+        />
+      </div>
+
+      <button onclick="createUser()" class="btn btn-secondary">Agregar Usuario</button>
+    </form>
+
+    <h2>Lista de Usuarios</h2>
+    <ul id="user-list">
+      <!-- USERS -->
     </ul>
-
-    <script>
-        // solicitud a la API para obtener la lista de productos
-        fetch('https://api.escuelajs.co/api/v1/products')
-            .then(res => res.json())
-            .then(products => {
-                const productList = document.getElementById('product-list');
-
-                // Itero por cada producto y lo agrego a la lista html
-                products.forEach(product => {
-                    const listItem = document.createElement('li');
-                    listItem.innerHTML = `
-                        <h2>${product.title}</h2>
-                        <p><strong>Precio:</strong> $${product.price}</p>
-                        <p><strong>Categoría:</strong> ${product.category.name}</p>
-                        <p><strong>Descripción:</strong> ${product.description}</p>
-                        <img src="${product.images[1]}" alt="Imagen del producto">
-                    `;
-                    productList.appendChild(listItem);
-                });
-            })
-            .catch(error => console.error('Error al obtener los productos:', error));
-    </script>
-</body>
+    <!-- SCRIPT -->
+    <script src="ejercicio3.js"></script>
+  </body>
 </html>
